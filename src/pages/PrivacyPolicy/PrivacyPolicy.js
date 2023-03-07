@@ -1,9 +1,10 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+
 import SEO from "../../common/SEO";
 import Header from "../../common/header/HeaderOne";
 import DarkLogo from "../Home/DarkLogo";
 import Footer from "../Footer/Footer";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const PrivacyPolicy = () => {
   return (
@@ -46,10 +47,10 @@ const PrivacyPolicy = () => {
               {/* 1 */}
               <div className="col-lg-12 col-xl-6 col-12">
                 <div className="split-inner">
-                  <ScrollAnimation
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}
+                  <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                   >
                     <div className="">
                       <h1 className="title">
@@ -60,11 +61,11 @@ const PrivacyPolicy = () => {
                         {/* сэтгүүл */}
                       </h1>
                     </div>
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    animateIn="fadeInUp"
-                    animateOut="fadeInOut"
-                    animateOnce={true}
+                  </AnimationOnScroll>
+                  <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                   >
                     <p className="description">
                       1. “ihelp Magazine” гэж дотоод болон гадаадын шинэ
@@ -97,7 +98,7 @@ const PrivacyPolicy = () => {
                       байна.
                       <br />
                     </p>
-                  </ScrollAnimation>
+                  </AnimationOnScroll>
                 </div>
               </div>
               {/* 2 */}
@@ -106,10 +107,10 @@ const PrivacyPolicy = () => {
                   <div className="row no-gutters radius-10 align-items-center">
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
@@ -117,11 +118,11 @@ const PrivacyPolicy = () => {
                             </strong>{" "}
                             {/* /хүний нөөц бүрдүүлэлт/ */}
                           </h4>
-                        </ScrollAnimation>
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <p className="description">
                             1. Үйлчилгээний нөхцөлийг хүлээн зөвшөөрөөгүй
@@ -147,7 +148,7 @@ const PrivacyPolicy = () => {
                             ашиглахдаа тохиолдолд үр дүнг нь өөрөө хариуцах
                             үүрэгтэй.
                           </p>
-                        </ScrollAnimation>
+                        </AnimationOnScroll>
                       </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 col-12">
@@ -177,21 +178,21 @@ const PrivacyPolicy = () => {
                     </div>
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
                               Гурав. Төлбөрийн нөхцөл
                             </strong>{" "}
                           </h4>
-                        </ScrollAnimation>
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <p className="description">
                             1. “ihelp Magazine” нь үнэ төлбөргүйгээр цахим
@@ -222,7 +223,7 @@ const PrivacyPolicy = () => {
                             болон бусад этгээдийн зүгээс ашиг олох зорилгоор
                             ашиглахыг хориглоно.
                           </p>
-                        </ScrollAnimation>
+                        </AnimationOnScroll>
                       </div>
                     </div>
                   </div>
@@ -234,21 +235,21 @@ const PrivacyPolicy = () => {
                   <div className="row no-gutters radius-10 align-items-center">
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
                               Тав. Хариуцлага
                             </strong>{" "}
                           </h4>
-                        </ScrollAnimation>
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <p className="description">
                             1. Хэрэглэгч өөрийн үүргээ үл биелүүлж Үйлчилгээний
@@ -276,7 +277,7 @@ const PrivacyPolicy = () => {
                             хууль, Зөрчлийн тухай хууль, Эрүүгийн тухай хууль
                             болон бусад хуульд заасан хариуцлага хүлээлгэнэ.
                           </p>
-                        </ScrollAnimation>
+                        </AnimationOnScroll>
                       </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 col-12">
@@ -306,21 +307,21 @@ const PrivacyPolicy = () => {
                     </div>
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
                               Зургаа. Бусад нөхцөл
                             </strong>{" "}
                           </h4>
-                        </ScrollAnimation>
-                        <ScrollAnimation
-                          animateIn="fadeInUp"
-                          animateOut="fadeInOut"
-                          animateOnce={true}
+                        </AnimationOnScroll>
+                        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
                         >
                           <p className="description">
                             1. “ihelp Magazine”-ийн хэвийн ажиллагаа, түүний
@@ -357,17 +358,17 @@ const PrivacyPolicy = () => {
                             гүтгэсэн, доромжилсон, тэдний нэр хүндэд халдсан
                             агуулгатай мэдээлэл оруулах, тараахыг хориглоно.
                           </p>
-                        </ScrollAnimation>
+                        </AnimationOnScroll>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               {/* footer */}
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                animateOut="fadeInOut"
-                animateOnce={true}
+              <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
               >
                 <div
                   style={{
@@ -387,7 +388,7 @@ const PrivacyPolicy = () => {
                     {/* </strong>{" "} */}
                   </h4>
                 </div>
-              </ScrollAnimation>
+              </AnimationOnScroll>
             </div>
           </div>
         </div>

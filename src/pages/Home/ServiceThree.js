@@ -1,14 +1,15 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import DarkLogo from "./DarkLogo";
 const ServiceThree = ({ textAlign, serviceStyle }) => {
   return (
     <div className="row row--15 service-wrapper">
       <div className="col-lg-6 col-md-9 col-sm-9 col-18">
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          animateOut="fadeInOut"
-          animateOnce={true}
+        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
         >
           <div className={`service ${serviceStyle} ${textAlign}`}>
             <div className="inner pb-xl-4">
@@ -35,13 +36,13 @@ const ServiceThree = ({ textAlign, serviceStyle }) => {
               </div>
             </div>
           </div>
-        </ScrollAnimation>
+        </AnimationOnScroll>
       </div>
       <div className="col-lg-6 col-md-9 col-sm-9 col-18">
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          animateOut="fadeInOut"
-          animateOnce={true}
+        <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
         >
           <div className={`service ${serviceStyle} ${textAlign}`}>
             <div className="inner">
@@ -74,7 +75,7 @@ const ServiceThree = ({ textAlign, serviceStyle }) => {
               </div>
             </div>
           </div>
-        </ScrollAnimation>
+        </AnimationOnScroll>
       </div>
     </div>
   );

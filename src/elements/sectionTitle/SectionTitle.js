@@ -1,31 +1,50 @@
-import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
+const SectionTitle = ({
+  subtitle,
+  title,
+  description,
+  textAlign,
+  radiusRounded,
+}) => {
+  return (
+    <div className={`section-title ${textAlign}`}>
+      <AnimationOnScroll
+        animateIn="animate__fadeIn"
+        animateOut="animate__fadeOut"
+        animateOnce={true}
+      >
+        <h4 className={`subtitle ${radiusRounded}`}>
+          <span
+            className="theme-gradient"
+            dangerouslySetInnerHTML={{ __html: subtitle }}
+          ></span>
+        </h4>
+      </AnimationOnScroll>
 
-const SectionTitle = ({subtitle, title, description, textAlign, radiusRounded}) => {
-    return (
-        <div className={`section-title ${textAlign}`}>
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
-                <h4 className={`subtitle ${radiusRounded}`}><span className="theme-gradient" dangerouslySetInnerHTML={{__html: subtitle}}></span></h4>
-            </ScrollAnimation>
-            
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
-                <h2 className="title w-600 mb--20" dangerouslySetInnerHTML={{__html: title}}></h2>
-            </ScrollAnimation>
+      <AnimationOnScroll
+        animateIn="animate__fadeIn"
+        animateOut="animate__fadeOut"
+        animateOnce={true}
+      >
+        <h2
+          className="title w-600 mb--20"
+          dangerouslySetInnerHTML={{ __html: title }}
+        ></h2>
+      </AnimationOnScroll>
 
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
-                <p className="description b1" dangerouslySetInnerHTML={{__html: description}}></p>
-            </ScrollAnimation>
-        </div>
-    )
-}
+      <AnimationOnScroll
+        animateIn="animate__fadeIn"
+        animateOut="animate__fadeOut"
+        animateOnce={true}
+      >
+        <p
+          className="description b1"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
+      </AnimationOnScroll>
+    </div>
+  );
+};
 export default SectionTitle;

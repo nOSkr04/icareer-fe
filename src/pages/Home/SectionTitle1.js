@@ -1,5 +1,6 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const SectionTitle1 = ({
   subtitle,
@@ -10,27 +11,27 @@ const SectionTitle1 = ({
 }) => {
   return (
     <div className={`section-title ${textAlign}`}>
-      <ScrollAnimation
-        animateIn="fadeInUp"
-        animateOut="fadeInOut"
-        animateOnce={true}
+      <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
       >
         <h2
           className="title w-600 mb--20"
           dangerouslySetInnerHTML={{ __html: "Бидний тухай" }}
         ></h2>
-      </ScrollAnimation>
+      </AnimationOnScroll>
 
-      <ScrollAnimation
-        animateIn="fadeInUp"
-        animateOut="fadeInOut"
-        animateOnce={true}
+      <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
       >
         <p
           className="description b1"
           dangerouslySetInnerHTML={{ __html: description }}
         ></p>
-      </ScrollAnimation>
+      </AnimationOnScroll>
     </div>
   );
 };

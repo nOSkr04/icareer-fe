@@ -1,5 +1,6 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 
 import { FiMail } from "react-icons/fi";
 
@@ -18,10 +19,10 @@ const AboutOne = ({ serviceStyle, textAlign }) => {
               </div>
             </div>
             <div className="col-lg-10 col-md-9 col-sm-9 col-18">
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                animateOut="fadeInOut"
-                animateOnce={true}
+              <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
               >
                 <div className={`service ${serviceStyle} ${textAlign}`}>
                   <div className="inner pb-xl-4">
@@ -51,7 +52,7 @@ const AboutOne = ({ serviceStyle, textAlign }) => {
                     </div>
                   </div>
                 </div>
-              </ScrollAnimation>
+              </AnimationOnScroll>
             </div>
           </div>
           <div className="col-lg-6">

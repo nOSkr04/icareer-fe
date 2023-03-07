@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { FiCheck } from "react-icons/fi";
 
 const About = () => {
@@ -9,11 +9,11 @@ const About = () => {
         <div className="row no-gutters radius-10 align-items-center">
           <div className="col-lg-12 col-xl-6 col-12">
             <div className="split-inner">
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                animateOut="fadeInOut"
-                animateOnce={true}
-              >
+            <AnimationOnScroll
+            animateIn="animate__fadeIn"
+            animateOut="animate__fadeOut"
+            animateOnce={true}
+          >
                 <h4 className="title">
                   Унших шалтгаан –
                   <strong style={{ color: "#059dff" }}>
@@ -21,10 +21,10 @@ const About = () => {
                     Зөвхөн хэрэгтэйг
                   </strong>{" "}
                 </h4>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                animateOut="fadeInOut"
+              </AnimationOnScroll>
+              <AnimationOnScroll
+                animateIn="animate__fadeIn"
+                animateOut="animate__fadeOut"
                 animateOnce={true}
               >
                 <p className="description">
@@ -72,7 +72,7 @@ const About = () => {
                     </li>
                   </ul>
                 </p>
-              </ScrollAnimation>
+              </AnimationOnScroll>
             </div>
           </div>
           <div className="col-lg-12 col-xl-6 col-12">
