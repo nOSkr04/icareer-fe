@@ -5,13 +5,15 @@ const NewsDetailsContent = (props) => {
   const { data } = props;
   return (
     <>
+    {data && 
       <MetaShare
-        title="Мэдээ мэдээлэл"
-        ogTitle={data.title}
-        ogDescrtiption={data.title}
-        image={data.image}
-        id={data._id}
+      title="Мэдээ мэдээлэл"
+      ogTitle={data.title}
+      ogDescrtiption={data.title}
+      image={data.image}
+      id={data._id}
       />
+    }
       <div className="post-page-banner rn-section-gapTop">
         <div className="container">
           <div className="row">
