@@ -21,7 +21,7 @@ const MetaShare = ({ title, ogTitle, ogDescrtiption, image }) => {
       <meta
         property="og:image"
         key="og:image"
-        content={`https://novelistgroup.com/upload/${image}`}
+        content={`https://career-developer.com/upload/${image}`}
       />
     </Helmet>
   );

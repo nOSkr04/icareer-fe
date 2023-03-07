@@ -139,7 +139,7 @@ export default class inWorks extends Component {
               <Col>
                 <div className="image">
                   <img
-                    src={`https://novelistgroup.com/upload/${this.state.image}`}
+                    src={`https://career-developer.com/upload/${this.state.image}`}
                     alt="card Images"
                   />
                 </div>

@@ -46,7 +46,7 @@ const AddWork = (props) => {
         data.append("file", file);
         xhr.open(
           "PUT",
-          `https://novelistgroup.com/api/v1/articles/${newWork._id}/photo`,
+          `https://career-developer.com/api/v1/articles/${newWork._id}/photo`,
           { headers }
         );
         xhr.send(data);

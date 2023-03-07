@@ -36,7 +36,7 @@ const WorkCards = ({ textAlign, serviceStyle }) => {
               <div className="inner">
                 <div className="image">
                   <img
-                    src={`https://novelistgroup.com/upload/${val.image}`}
+                    src={`https://career-developer.com/upload/${val.image}`}
                     alt="card Images"
                   />
                 </div>

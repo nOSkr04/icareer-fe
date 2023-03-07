@@ -10,7 +10,7 @@ const NewsItem = ({ data }) => {
             <Link to={process.env.PUBLIC_URL + `/news/${data.id}`}>
               <img
                 className="img-fluid"
-                src={`https://novelistgroup.com/upload/${data.image}`}
+                src={`https://career-developer.com/upload/${data.image}`}
                 alt="Portfolio-01"
               />
             </Link>

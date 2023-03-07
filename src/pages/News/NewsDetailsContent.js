@@ -27,7 +27,7 @@ const NewsDetailsContent = (props) => {
                     {data.createUser && (
                       <>
                         <img
-                          src={`https://novelistgroup.com/upload/${data.createUser.profile}`}
+                          src={`https://career-developer.com/upload/${data.createUser.profile}`}
                           alt="profile-pic"
                           style={{ width: 50, height: 50, borderRadius: 50 }}
                         />
@@ -54,7 +54,7 @@ const NewsDetailsContent = (props) => {
                 <div className="thumbnail alignwide mt--60">
                   <img
                     className="w-100 radius"
-                    src={`https://novelistgroup.com/upload/${data.image}`}
+                    src={`https://career-developer.com/upload/${data.image}`}
                     alt="Blog Images"
                   />
                 </div>

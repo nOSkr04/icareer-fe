@@ -25,7 +25,7 @@ const HeadTags = (props) => {
       <meta
         property="og:image"
         key="og:image"
-        content={`https://novelistgroup.com/upload/${image}`}
+        content={`https://career-developer.com/upload/${image}`}
       />
       {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="description" key="description" content={metaDescription} />
