@@ -12,6 +12,7 @@ const NewsItem = ({ data }) => {
                 className="img-fluid"
                 src={`https://career-developer.com/upload/${data.image}`}
                 alt="Portfolio-01"
+              
               />
             </Link>
           </figure>

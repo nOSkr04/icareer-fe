@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import NewsDetailsContent from "./NewsDetailsContent";
-import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
 import axios from "../../axios";
 

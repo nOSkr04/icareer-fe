@@ -7,7 +7,7 @@ import NewsData from "./NewsData";
 const News = () => {
   return (
     <>
-      <SEO title="career developer medee" />
+      <SEO title="Нийтлэл" />
       <Layout>
         <div className="main-content">
           <div className="rwt-portfolio-area rn-section-gap">

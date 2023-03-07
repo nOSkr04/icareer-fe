@@ -1,7 +1,5 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-import { Link } from "react-router-dom";
-import { FiCalendar } from "react-icons/fi";
-import moment from "moment";
 import MetaShare from "../../common/MetaShare";
 const NewsDetailsContent = (props) => {
   const { data } = props;
@@ -21,36 +19,7 @@ const NewsDetailsContent = (props) => {
                 <div className="page-title">
                   <h1 className="theme-gradient">{data.title}</h1>
                 </div>
-
-                <ul className="rn-meta-list">
-                  <li>
-                    {data.createUser && (
-                      <>
-                        <img
-                          src={`https://career-developer.com/upload/${data.createUser.profile}`}
-                          alt="profile-pic"
-                          style={{ width: 50, height: 50, borderRadius: 50 }}
-                        />
-                        <Link>{data.createUser.firstName}</Link>
-                      </>
-                    )}
-                  </li>
-                  <li>
-                    <FiCalendar />
-                    {moment(data.createdAt).format("L")}
-                  </li>
-                </ul>
-
-                <iframe
-                  src={`https://www.facebook.com/plugins/like.php?href=https://icareer.mn/news/${data._id}&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=662546334827488`}
-                  width={174}
-                  height={46}
-                  style={{ border: "none", overflow: "hidden" }}
-                  scrolling="no"
-                  frameborder="0"
-                  allowfullscreen="true"
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                ></iframe>
+              
                 <div className="thumbnail alignwide mt--60">
                   <img
                     className="w-100 radius"
@@ -95,6 +64,16 @@ const NewsDetailsContent = (props) => {
                       />
                     );
                   })}
+      <iframe
+                  src={`https://www.facebook.com/plugins/like.php?href=https://icareer.mn/news/${data._id}&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=662546334827488`}
+                  width={174}
+                  height={46}
+                  style={{ border: "none", overflow: "hidden" }}
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
               </div>
             </div>
           </div>
