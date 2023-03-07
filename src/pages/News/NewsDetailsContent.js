@@ -10,6 +10,7 @@ const NewsDetailsContent = (props) => {
         ogTitle={data.title}
         ogDescrtiption={data.title}
         image={data.image}
+        id={data._id}
       />
       <div className="post-page-banner rn-section-gapTop">
         <div className="container">
