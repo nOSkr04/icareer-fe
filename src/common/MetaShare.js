@@ -5,13 +5,14 @@ const MetaShare = ({ title, ogTitle, ogDescrtiption, image, id }) => {
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="title" content={ogTitle} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://www.icareer.mn/news/${id}`} />
-      <meta property="og:title" content={ogTitle} />
+      <meta name="title" content={ogTitle}  data-react-helmet="true"/>
+      <meta property="og:type" content="website" data-react-helmet="true" />
+      <meta property="og:url" content={`https://www.icareer.mn/news/${id}`}  data-react-helmet="true"/>
+      <meta property="og:title" content={ogTitle} data-react-helmet="true" />
       <meta
         property="og:image"
         content={`https://career-developer.com/upload/${image}`}
+        data-react-helmet="true"
       />
     </Helmet>
   );
