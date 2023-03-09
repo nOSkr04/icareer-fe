@@ -5,6 +5,7 @@ import React from "react";
 
 const SEO = ({ title, description, image }) => {
   const router = useRouter();
+  console.log(title, description, image, "<====");
   return (
     <Head>
       <title>{title}</title>
