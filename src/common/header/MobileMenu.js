@@ -34,8 +34,8 @@ const MobileMenu = ({ show, onClose }) => {
       <div className="inner">
         <div className="header-top">
           <Logo
-            image={`${process.env.PUBLIC_URL}/images/ihelp/careerWhite.png`}
-            image2={`${process.env.PUBLIC_URL}/images/ihelp/careerBlack.png`}
+            image={`/images/ihelp/careerWhite.png`}
+            image2={`/images/ihelp/careerBlack.png`}
           />
           <div className="close-menu">
             <span className="close-button" onClick={onClose}>

@@ -1,22 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Nav = () => {
   return (
     <ul className="mainmenu">
       <li>
-        <Link to="/">Эхлэл</Link>
+        <Link href="/">Эхлэл</Link>
       </li>
 
       <li>
-        <Link to="/news">Мэдээ</Link>
+        <Link href="/news">Мэдээ</Link>
       </li>
 
       <li>
-        <Link to="/pricing">Захиалга</Link>
+        <Link href="/pricing">Захиалга</Link>
       </li>
       <li>
-        <Link to="/contact">Холбоо барих</Link>
+        <Link href="/contact">Холбоо барих</Link>
       </li>
     </ul>
   );

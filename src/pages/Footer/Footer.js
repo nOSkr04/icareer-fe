@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import footerOne from "./footerOne.json";
-import ScrollTop from "./ScrollTop";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 const footerIntemOne = footerOne[1];
 const footerIntemTwo = footerOne[2];
@@ -22,8 +21,8 @@ const Footer = () => {
                 <div className="rn-footer-widget">
                   {/* <div className="logo">
                     <Logo
-                      image={`${process.env.PUBLIC_URL}/images/ihelp/companyWhite.png`}
-                      image2={`${process.env.PUBLIC_URL}/images/ihelp/companyBlack.png`}
+                      image={`/images/ihelp/companyWhite.png`}
+                      image2={`/images/ihelp/companyBlack.png`}
                     />
                   </div> */}
                   <h3 className="text-big">
@@ -40,7 +39,7 @@ const Footer = () => {
                     <ul className="footer-link link-hover">
                       {indexOneLink.map((data, index) => (
                         <li key={index}>
-                          <Link to={`${data.url}`}>{data.text}</Link>
+                          <Link href={`${data.url}`}>{data.text}</Link>
                         </li>
                       ))}
                     </ul>
@@ -58,7 +57,7 @@ const Footer = () => {
                       <ul className="footer-link link-hover">
                         <li>
                           <Link
-                            to="//novelistgroup.com/upload/brochure.pdf"
+                            href="www.novelistgroup.com/upload/brochure.pdf"
                             target="_blank"
                           >
                             Сурталчилгаа тавих үнийн санал
@@ -66,7 +65,7 @@ const Footer = () => {
                         </li>
                         {indexThreeLink.map((data, index) => (
                           <li key={index}>
-                            <Link to={`${data.url}`}>{data.text}</Link>
+                            <Link href={`${data.url}`}>{data.text}</Link>
                           </li>
                         ))}
                       </ul>
@@ -85,7 +84,7 @@ const Footer = () => {
                     <ul className="social-icon social-default justify-content-start">
                       <li>
                         <Link
-                          to="//www.facebook.com/careerdevelopermagazine"
+                          href="www.facebook.com/careerdevelopermagazine"
                           target="_blank"
                         >
                           <FiFacebook />
@@ -94,7 +93,7 @@ const Footer = () => {
 
                       <li>
                         <Link
-                          to="//www.instagram.com/career_magazine/"
+                          href="www.instagram.com/career_magazine/"
                           target="_blank"
                         >
                           <FiInstagram />
@@ -102,7 +101,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link
-                          to="//www.linkedin.com/showcase/career-developer-magazine"
+                          href="www.linkedin.com/showcase/career-developer-magazine"
                           target="_blank"
                         >
                           <FiLinkedin />
@@ -117,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <ScrollTop />
+      {/* <ScrollTop /> */}
     </>
   );
 };

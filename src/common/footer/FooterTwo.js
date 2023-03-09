@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import CalltoActionSeven from "../../elements/calltoaction/CalltoActionSeven";
+import Link from "next/link";
 import footerOne from "../../data/footer/footerOne.json";
 import ScrollTop from "./ScrollTop";
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
@@ -31,7 +30,7 @@ const FooterTwo = () => {
                     <ul className="footer-link link-hover">
                       {indexOneLink.map((data, index) => (
                         <li key={index}>
-                          <Link to={`${data.url}`}>{data.text}</Link>
+                          <Link href={`${data.url}`}>{data.text}</Link>
                         </li>
                       ))}
                     </ul>
@@ -49,7 +48,7 @@ const FooterTwo = () => {
                       <ul className="footer-link link-hover">
                         {indexThreeLink.map((data, index) => (
                           <li key={index}>
-                            <Link to={`${data.url}`}>{data.text}</Link>
+                            <Link href={`${data.url}`}>{data.text}</Link>
                           </li>
                         ))}
                       </ul>
@@ -67,7 +66,7 @@ const FooterTwo = () => {
                     <ul className="footer-link link-hover">
                       {indexTwoLink.map((data, index) => (
                         <li key={index}>
-                          <Link to={`${data.url}`}>{data.text}</Link>
+                          <Link href={`${data.url}`}>{data.text}</Link>
                         </li>
                       ))}
                     </ul>
@@ -84,7 +83,7 @@ const FooterTwo = () => {
                     <ul className="footer-link link-hover">
                       {indexTwoLink.map((data, index) => (
                         <li key={index}>
-                          <Link to={`${data.url}`}>{data.text}</Link>
+                          <Link href={`${data.url}`}>{data.text}</Link>
                         </li>
                       ))}
                     </ul>
@@ -101,22 +100,22 @@ const FooterTwo = () => {
                     <h6 className="subtitle">{footerIntemFive.subtitle}</h6>
                     <ul className="social-icon social-default justify-content-start">
                       <li>
-                        <Link to="facebook.com">
+                        <Link href="facebook.com">
                           <FiFacebook />
                         </Link>
                       </li>
                       <li>
-                        <Link to="twitter.com">
+                        <Link href="twitter.com">
                           <FiTwitter />
                         </Link>
                       </li>
                       <li>
-                        <Link to="instagram.com">
+                        <Link href="instagram.com">
                           <FiInstagram />
                         </Link>
                       </li>
                       <li>
-                        <Link to="linkdin.com">
+                        <Link href="linkdin.com">
                           <FiLinkedin />
                         </Link>
                       </li>

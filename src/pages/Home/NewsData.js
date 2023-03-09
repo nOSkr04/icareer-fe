@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import axios from "../../axios";
-import NewsItem from "../News/NewsItem";
-
+import NewsItem from "../news/NewsItem";
 const PortfolioOne = ({ Column }) => {
   const [getAllItems, setGetAllItems] = useState([]);
   useEffect(() => {
@@ -27,7 +26,7 @@ const PortfolioOne = ({ Column }) => {
       <div className="row row--15">
         <div className="col-lg-12">
           <div className="rwt-load-more text-center mt--50">
-            <Link className="btn btn-default btn-large btn-icon" to="/news">
+            <Link className="btn btn-default btn-large btn-icon" href="/news">
               <span>Дэлгэрэнгүй</span>
             </Link>
           </div>

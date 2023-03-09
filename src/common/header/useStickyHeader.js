@@ -1,19 +1,19 @@
-import {useLayoutEffect, useState} from "react";
-
+import { useState } from "react";
+import useLayoutEffect from "./useIsomorphicLayoutEffect";
 const useStickyHeader = (offset = 0) => {
-    const [stick, setStick] = useState(false);
-  
-    const handleScroll = () => {
-      setStick( window.scrollY > offset );
-    };
-    
-    useLayoutEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-        return(() => {
-            window.removeEventListener('scroll', handleScroll);
-        });
-    });
-    return stick;
-}
+  const [stick, setStick] = useState(false);
 
-export default useStickyHeader
+  const handleScroll = () => {
+    setStick(window.scrollY > offset);
+  };
+
+  useLayoutEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+  return stick;
+};
+
+export default useStickyHeader;

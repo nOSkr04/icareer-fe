@@ -5,7 +5,7 @@ import Copyright from "./footer/Copyright";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <main className="page-wrapper">
         <HeaderOne
           btnStyle="btn-small round btn-icon"
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         />
         {children}
       </main>
-    </>
+    </div>
   );
 };
 export default Layout;

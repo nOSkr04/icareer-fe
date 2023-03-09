@@ -38,12 +38,12 @@ const Darkmode2 = () => {
     >
       <img
         className="light-icon"
-        src={`${process.env.PUBLIC_URL}/images/icons/sun-01.svg`}
+        src={`/images/icons/sun-01.svg`}
         alt="Sun images"
       />
       <img
         className="dark-icon"
-        src={`${process.env.PUBLIC_URL}/images/icons/vector.svg`}
+        src={`/images/icons/vector.svg`}
         alt="Sun images"
       />
     </button>

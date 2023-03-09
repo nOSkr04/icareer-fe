@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const ServiceList = [
@@ -34,7 +34,7 @@ const ServiceFive = ({ textAlign, serviceStyle }) => {
                 <div className="content">
                   <h4 className="title">
                     <Link
-                      to="#service"
+                      href="#service"
                       dangerouslySetInnerHTML={{ __html: val.title }}
                     ></Link>
                   </h4>

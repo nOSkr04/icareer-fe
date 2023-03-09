@@ -7,22 +7,22 @@ const ServiceThree = ({ textAlign, serviceStyle }) => {
     <div className="row row--15 service-wrapper">
       <div className="col-lg-6 col-md-9 col-sm-9 col-18">
         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+          animateIn="animate__fadeIn"
+          animateOut="animate__fadeOut"
+          animateOnce={true}
         >
           <div className={`service ${serviceStyle} ${textAlign}`}>
             <div className="inner pb-xl-4">
               <div className="image" style={{ alignSelf: "center" }}>
                 <DarkLogo
-                  image={`${process.env.PUBLIC_URL}/images/ihelp/magazineWhite.png`}
-                  image2={`${process.env.PUBLIC_URL}/images/ihelp/magazineBlack.png`}
+                  image={`/images/ihelp/magazineWhite.png`}
+                  image2={`/images/ihelp/magazineBlack.png`}
                 />
               </div>
               <div className="content" style={{ paddingTop: 25 }}>
                 {/* <h4 className="title">
                   <Link
-                    to="#service"
+                    href="#service"
                     dangerouslySetInnerHTML={{ __html: "Төсөл" }}
                   ></Link>
                 </h4> */}
@@ -40,9 +40,9 @@ const ServiceThree = ({ textAlign, serviceStyle }) => {
       </div>
       <div className="col-lg-6 col-md-9 col-sm-9 col-18">
         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+          animateIn="animate__fadeIn"
+          animateOut="animate__fadeOut"
+          animateOnce={true}
         >
           <div className={`service ${serviceStyle} ${textAlign}`}>
             <div className="inner">
@@ -54,14 +54,14 @@ const ServiceThree = ({ textAlign, serviceStyle }) => {
                 }}
               >
                 <DarkLogo
-                  image={`${process.env.PUBLIC_URL}/images/ihelp/careerWhite.png`}
-                  image2={`${process.env.PUBLIC_URL}/images/ihelp/careerBlack.png`}
+                  image={`/images/ihelp/careerWhite.png`}
+                  image2={`/images/ihelp/careerBlack.png`}
                 />
               </div>
               <div className="content">
                 {/* <h4 className="title">
                   <Link
-                    to="#service"
+                    href="#service"
                     dangerouslySetInnerHTML={{ __html: "Сэтгүүл" }}
                   ></Link>
                 </h4> */}

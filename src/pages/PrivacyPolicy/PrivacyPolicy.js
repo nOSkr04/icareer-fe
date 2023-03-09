@@ -24,8 +24,8 @@ const PrivacyPolicy = () => {
               <div className="order-1 order-lg-2 col-lg-5">
                 <div className="thumbnail">
                   <DarkLogo
-                    image={`${process.env.PUBLIC_URL}/images/ihelplogo/magazineW1.png`}
-                    image2={`${process.env.PUBLIC_URL}/images/ihelplogo/magazineB1.png`}
+                    image={`/images/ihelplogo/magazineW1.png`}
+                    image2={`/images/ihelplogo/magazineB1.png`}
                   />
                 </div>
               </div>
@@ -48,9 +48,9 @@ const PrivacyPolicy = () => {
               <div className="col-lg-12 col-xl-6 col-12">
                 <div className="split-inner">
                   <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                    animateIn="animate__fadeIn"
+                    animateOut="animate__fadeOut"
+                    animateOnce={true}
                   >
                     <div className="">
                       <h1 className="title">
@@ -63,9 +63,9 @@ const PrivacyPolicy = () => {
                     </div>
                   </AnimationOnScroll>
                   <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                    animateIn="animate__fadeIn"
+                    animateOut="animate__fadeOut"
+                    animateOnce={true}
                   >
                     <p className="description">
                       1. “ihelp Magazine” гэж дотоод болон гадаадын шинэ
@@ -108,9 +108,9 @@ const PrivacyPolicy = () => {
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
@@ -120,9 +120,9 @@ const PrivacyPolicy = () => {
                           </h4>
                         </AnimationOnScroll>
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <p className="description">
                             1. Үйлчилгээний нөхцөлийг хүлээн зөвшөөрөөгүй
@@ -179,9 +179,9 @@ const PrivacyPolicy = () => {
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
@@ -190,9 +190,9 @@ const PrivacyPolicy = () => {
                           </h4>
                         </AnimationOnScroll>
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <p className="description">
                             1. “ihelp Magazine” нь үнэ төлбөргүйгээр цахим
@@ -236,9 +236,9 @@ const PrivacyPolicy = () => {
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
@@ -247,9 +247,9 @@ const PrivacyPolicy = () => {
                           </h4>
                         </AnimationOnScroll>
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <p className="description">
                             1. Хэрэглэгч өөрийн үүргээ үл биелүүлж Үйлчилгээний
@@ -308,9 +308,9 @@ const PrivacyPolicy = () => {
                     <div className="col-lg-12 col-xl-6 col-12">
                       <div className="split-inner">
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <h4 className="title">
                             <strong style={{ color: "#059dff" }}>
@@ -319,9 +319,9 @@ const PrivacyPolicy = () => {
                           </h4>
                         </AnimationOnScroll>
                         <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                          animateIn="animate__fadeIn"
+                          animateOut="animate__fadeOut"
+                          animateOnce={true}
                         >
                           <p className="description">
                             1. “ihelp Magazine”-ийн хэвийн ажиллагаа, түүний
@@ -366,9 +366,9 @@ const PrivacyPolicy = () => {
               </div>
               {/* footer */}
               <AnimationOnScroll
-            animateIn="animate__fadeIn"
-            animateOut="animate__fadeOut"
-            animateOnce={true}
+                animateIn="animate__fadeIn"
+                animateOut="animate__fadeOut"
+                animateOnce={true}
               >
                 <div
                   style={{

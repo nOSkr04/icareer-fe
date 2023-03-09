@@ -1,6 +1,6 @@
 import React from "react";
 import { FiActivity, FiCast, FiMap } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -40,7 +40,7 @@ const ServiceOne = ({ textAlign, serviceStyle }) => {
               <div className="content">
                 <h4 className="title w-600">
                   <Link
-                    to="#service"
+                    href="#service"
                     dangerouslySetInnerHTML={{ __html: val.title }}
                   ></Link>
                 </h4>
