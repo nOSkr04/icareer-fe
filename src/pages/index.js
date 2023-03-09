@@ -15,7 +15,11 @@ import NewsData from "../components/Home/NewsData";
 const HomeScreen = () => {
   return (
     <div>
-      <SEO title="Нүүр хуудас" />
+      <SEO
+        title="Нүүр хуудас"
+        image={"logo"}
+        description={"Read, Think, decide."}
+      />
       <main className="page-wrapper">
         <HeaderOne
           btnStyle="btn-small btn-icon round"

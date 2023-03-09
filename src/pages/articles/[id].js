@@ -3,6 +3,7 @@ import NewsDetailsContent from "../../components/news/NewsDetailsContent";
 import Layout from "../../common/Layout";
 import axios from "../../axios";
 import { useRouter } from "next/router";
+import SEO from "../../common/SEO";
 
 const NewsDetail = (props) => {
   const router = useRouter();
@@ -17,12 +18,12 @@ const NewsDetail = (props) => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <>
-      {/* <SEO title="Мэдээ" /> */}
+    <div>
+      {/* <SEO description={} title="Мэдээ"  /> */}
       <Layout>
         <NewsDetailsContent data={data} />
       </Layout>
-    </>
+    </div>
   );
 };
 

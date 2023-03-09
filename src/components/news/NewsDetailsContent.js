@@ -1,19 +1,13 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-import MetaShare from "../../common/MetaShare";
+import SEO from "../../common/SEO";
 const NewsDetailsContent = (props) => {
   const { data } = props;
   return (
     <>
       {data && (
-        <>
-          <MetaShare
-            title="Мэдээ мэдээлэл"
-            ogTitle={data.title}
-            ogDescrtiption={data.title}
-            image={data.image}
-            id={data._id}
-          />
+        <div>
+          <SEO title={data.title} description="" image={data.image} />
           <div className="post-page-banner rn-section-gapTop">
             <div className="container">
               <div className="row">
@@ -82,7 +76,7 @@ const NewsDetailsContent = (props) => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );
