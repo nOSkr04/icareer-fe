@@ -6,11 +6,7 @@ const NewsDetailsContent = (props) => {
 
   return (
     <div>
-      <SEO
-        title={data?.title}
-        description="me"
-        image={data?.image ? data?.image : "logo"}
-      />
+      <SEO title={data.title} description={data.title} image={data.image} />
       <div className="post-page-banner rn-section-gapTop">
         <div className="container">
           <div className="row">

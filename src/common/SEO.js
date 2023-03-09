@@ -5,16 +5,15 @@ import React from "react";
 
 const SEO = ({ title, description, image }) => {
   const router = useRouter();
-  console.log(title, description, image, "<====");
   return (
     <Head>
-      <title>{title && title}</title>
+      <title>{title}</title>
       <meta
         property="og:url"
         content={`https://www.icareer.mn${router.asPath}`}
       />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title && title} />
+      <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta
         property="og:image"
