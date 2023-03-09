@@ -6,7 +6,7 @@ import NewsData from "./NewsData";
 
 const News = () => {
   return (
-    <>
+    <div>
       <SEO title="Нийтлэл" />
       <Layout>
         <div className="main-content">
@@ -22,7 +22,7 @@ const News = () => {
           </div>
         </div>
       </Layout>
-    </>
+    </div>
   );
 };
 export default News;
