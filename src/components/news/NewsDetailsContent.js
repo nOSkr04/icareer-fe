@@ -8,7 +8,11 @@ const NewsDetailsContent = (props) => {
   }
   return (
     <div>
-      <SEO title={data.title} description="" image={data.image} />
+      <SEO
+        title={data.title}
+        description=""
+        image={data.image ? data?.image : "logo"}
+      />
       <div className="post-page-banner rn-section-gapTop">
         <div className="container">
           <div className="row">
@@ -19,11 +23,13 @@ const NewsDetailsContent = (props) => {
                 </div>
 
                 <div className="thumbnail alignwide mt--60">
-                  <img
-                    className="w-100 radius"
-                    src={`https://career-developer.com/upload/${data.image}`}
-                    alt="Blog Images"
-                  />
+                  {data.image && (
+                    <img
+                      className="w-100 radius"
+                      src={`https://career-developer.com/upload/${data.image}`}
+                      alt="Blog Images"
+                    />
+                  )}
                 </div>
               </div>
             </div>
