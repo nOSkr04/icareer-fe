@@ -26,7 +26,10 @@ const PortfolioOne = ({ Column }) => {
       <div className="row row--15">
         <div className="col-lg-12">
           <div className="rwt-load-more text-center mt--50">
-            <Link className="btn btn-default btn-large btn-icon" href="/news">
+            <Link
+              className="btn btn-default btn-large btn-icon"
+              href="/newspage"
+            >
               <span>Дэлгэрэнгүй</span>
             </Link>
           </div>
