@@ -5,26 +5,29 @@ import axios from "../../axios";
 import { useRouter } from "next/router";
 import SEO from "../../common/SEO";
 
-const NewsDetail = (props) => {
-  const router = useRouter();
-  const { id } = router.query;
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get(`/articles/${id}`)
-      .then((result) => {
-        setData(result.data.data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+export async function getServerSideProps(context) {
+  const res = await fetch(
+    `https://career-developer.com/api/v1/articles/${context.query.id}`
+  );
+  const data = await res.json();
+
   if (!data) {
-    return null;
+    return {
+      notFound: true,
+    };
   }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  };
+}
+
+const NewsDetail = ({ data }) => {
   return (
     <div>
       {/* <SEO description={} title="Мэдээ"  /> */}
       <Layout>
-        <NewsDetailsContent data={data} />
+        <NewsDetailsContent data={data.data} />
       </Layout>
     </div>
   );
