@@ -3,9 +3,7 @@ import React from "react";
 import SEO from "../../common/SEO";
 const NewsDetailsContent = (props) => {
   const { data } = props;
-  if (!data) {
-    return null;
-  }
+
   return (
     <div>
       <SEO

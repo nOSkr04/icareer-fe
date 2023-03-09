@@ -17,6 +17,9 @@ const NewsDetail = (props) => {
       })
       .catch((err) => console.log(err));
   }, []);
+  if (!data) {
+    return null;
+  }
   return (
     <div>
       {/* <SEO description={} title="Мэдээ"  /> */}
