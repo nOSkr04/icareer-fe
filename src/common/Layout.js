@@ -1,7 +1,5 @@
 import React from "react";
 import HeaderOne from "./header/HeaderOne";
-import FooterTwo from "./footer/FooterTwo";
-import Copyright from "./footer/Copyright";
 
 const Layout = ({ children }) => {
   return (

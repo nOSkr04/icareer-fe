@@ -1,7 +1,13 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/PrivacyPolicy": "pages/PrivacyPolicy.html",
+  "/articles/[id]": "pages/articles/[id].html",
+  "/news": "pages/news.html",
+  "/SocialPlugin/LikeAndShare": "pages/SocialPlugin/LikeAndShare.html",
+  "/contact": "pages/contact.html",
+  "/": "pages/index.html",
+  "/pricing": "pages/pricing.html",
   "/_document": "pages/_document.js",
-  "/contact": "pages/contact.js",
-  "/pricing": "pages/pricing.js"
+  "/404": "pages/404.html"
 }

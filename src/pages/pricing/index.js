@@ -2,8 +2,8 @@ import React from "react";
 import NewsletterOne from "../../common/footer/NewsletterOne";
 import Layout from "../../common/Layout";
 import SEO from "../../common/SEO";
-import Footer from "../Footer/Footer";
-import SectionTitle from "./SectionTitle";
+import Footer from "../../components/Footer/Footer";
+import SectionTitle from "../../components/pricing/SectionTitle";
 const Pricing = () => {
   return (
     <>

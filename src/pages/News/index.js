@@ -1,8 +1,8 @@
 import React from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
-import SectionTitle from "./SectionTitle";
-import NewsData from "./NewsData";
+import SectionTitle from "../../components/news/SectionTitle";
+import NewsData from "../../components/news/NewsData";
 
 const News = () => {
   return (

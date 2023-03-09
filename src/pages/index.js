@@ -2,16 +2,16 @@ import React from "react";
 import SEO from "../common/SEO";
 import HeaderOne from "../common/header/HeaderOne";
 import Separator from "../elements/separator/Separator";
-import SectionTitle1 from "./Home/SectionTitle1";
-import About from "./Home/About";
-import About1 from "./Home/About1";
-import ServiceThree from "./Home/ServiceThree";
-import About3 from "./Home/About3";
-import AboutOne from "./Home/AboutOne";
-import Footer from "./Footer/Footer";
+import SectionTitle1 from "../components/Home/SectionTitle1";
+import About from "../components/Home/About";
+import About1 from "../components/Home/About1";
+import ServiceThree from "../components/Home/ServiceThree";
+import About3 from "../components/Home/About3";
+import AboutOne from "../components/Home/AboutOne";
+import Footer from "../components/Footer/Footer";
 import Layout from "../common/Layout";
-import SectionTitle from "./news/SectionTitle";
-import NewsData from "./Home/NewsData";
+import SectionTitle from "../components/Home/SectionTitle";
+import NewsData from "../components/Home/NewsData";
 const HomeScreen = () => {
   return (
     <div>

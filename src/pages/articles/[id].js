@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NewsDetailsContent from "../news/NewsDetailsContent";
+import NewsDetailsContent from "../../components/news/NewsDetailsContent";
 import Layout from "../../common/Layout";
 import axios from "../../axios";
 import { useRouter } from "next/router";

@@ -1,11 +1,13 @@
 import React from "react";
 import SEO from "../../common/SEO";
 import Layout from "../../common/Layout";
-import ContactOne from "./ContactOne";
+import ContactOne from "../../components/contact/ContactOne";
+
 import Separator from "../../elements/separator/Separator";
-import ContactData from "./ContactData";
+import ContactData from "../../components/contact/ContactData";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
+
 const Contact = () => {
   return (
     <>
